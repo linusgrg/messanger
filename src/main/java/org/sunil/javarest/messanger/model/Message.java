@@ -11,6 +11,8 @@ import javax.xml.bind.annotation.XmlTransient;
 
 @XmlRootElement
 public class Message {
+	
+	private int count;
 	private Long id;
 	private String message;
 	private Date created;
@@ -82,6 +84,8 @@ public class Message {
 		return links;
 	}
 
+	
+//	this is for the link 
 	public void setLinks(List<Link> links) {
 		this.links = links;
 	}
